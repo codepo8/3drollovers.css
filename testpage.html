@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3Drollovers.css test page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="site.css" type="text/css">
+  <link rel="stylesheet" href="3Drollovers.css" type="text/css">
+</head>
+<body>
+  <header><h1>3Drollovers.css test page</h1></header>
+  <section class="all">
+    <ol>
+  <li>
+    <h2>Rollover</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+  
+  <li class="fade">
+    <h2>Fade</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+
+  <li class="flip">
+    <h2>Flip</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+
+  <li class="flip up">
+    <h2>Flip Up</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+  
+  <li class="flip box">
+    <h2>Flip Box</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+
+  <li class="flip box fade">
+    <h2>Flip Box Fade</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+
+  <li class="flip box fade up">
+    <h2>Flip Box Fade Up</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+  
+  <li class="flip box fade hideback">
+    <h2>Flip Box Fade Hideback</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+
+  <li class="flip box fade up hideback">
+    <h2>Flip Box Fade Up Hideback</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+
+  <li class="nananana">
+    <h2>Nananana</h2>
+    <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <figure class="cube">
+        <img src="mdnface.png" class="front" alt="MDN">
+        <img src="htmlface.png" class="back" alt="HTML5">
+      </figure>
+    </a>
+  </li>
+
+  </section>
+  
+  <section class="interactive">
+    <p>Try to set the different classes in the form field and then roll over the image.</p>
+    <output id="demo">
+      <div class="fade flip box">
+        <a class="rollover" href="https://developer.mozilla.org/en/HTML/HTML5">
+          <figure class="cube">
+            <img src="mdnface.png" class="front" alt="MDN">
+            <img src="htmlface.png" class="back" alt="HTML5">
+          </figure>
+        </a>
+      </div>
+    </output>
+    <form>
+      <pre><code><span>&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;title&gt;Rollover&lt;/title&gt;</span>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;3Drollovers.css&quot; type=&quot;text/css&quot;&gt;
+<span>&lt;/head&gt;&lt;body&gt;</span>
+&lt;div class=&quot;<input type="text" id="fx" value="fade box">&quot;&gt;
+  &lt;a class=&quot;rollover&quot;
+        href=&quot;https://developer.mozilla.org/en/HTML/HTML5&quot;&gt;
+    &lt;figure class=&quot;cube&quot;&gt;
+      &lt;img src=&quot;mdnface.png&quot; class=&quot;front&quot; alt=&quot;MDN&quot;&gt;
+      &lt;img src=&quot;htmlface.png&quot; class=&quot;back&quot; alt=&quot;HTML5&quot;&gt;
+    &lt;/figure&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+<span>&lt;/body&gt;&lt;/html&gt;</span></code></pre>
+      <input type="submit" value="see changes">
+    </form>
+  </section>
+    
+  <footer>
+  <p>Written by 
+    <a href="http://christianheilmann.com/">Chris Heilmann</a> 
+    (<a href="http://twitter.com/codepo8">@codepo8</a>)
+  </p>
+</footer>
+<script>
+(function(){
+var f = document.querySelector('form'),
+    d = document.querySelector('#demo div'),
+    fx = document.querySelector('#fx');
+
+f.addEventListener('input', addclasses, false);
+f.addEventListener('change', addclasses, false);
+f.addEventListener('submit', addclasses, false);
+
+function addclasses(ev) {
+  d.className = fx.value;
+  ev.preventDefault();
+}
+})();
+</script>
+<!-- <img src="http://thewebrocks.com/demos/3D-css-tester/mdnface.png"
+     class="front" alt="MDN">
+<img src="http://thewebrocks.com/demos/3D-css-tester/htmlface.png"
+     class="back" alt="HTML5"> -->
+</body>
+</html>
