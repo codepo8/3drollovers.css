@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta type="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<style>
+  * { 
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: helvetica, arial, sans-serif;
+  }
+  #boom {
+    background: #ccc;
+    padding: 2em;
+    width: 400px;
+    height: 400px;
+    -moz-perspective: 800px;
+    -webkit-perspective: 800px;
+  }
+  #boom div {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    -moz-transform: rotateY(90deg);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform: rotateY(90deg);
+    -webkit-transform-style: preserve-3d;
+  }
+  #boom span{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    display: block;
+    background: red;
+  }  
+  footer, section, header, aside, figure {
+    display: block;
+  }
+  #boom div{
+    -moz-animation: moo 3s infinite linear;
+    -webkit-animation: moo 3s infinite linear;
+  }
+  @-moz-keyframes moo {
+    0% { -moz-transform: scale(0,0) rotateY(0); }
+    50% { 
+      -moz-transform: scale(1,1) rotateY(360deg);
+    }
+    100% { 
+      -moz-transform: scale(0,0) rotateY(720deg);
+    }
+  }
+  @-webkit-keyframes moo {
+    0% { -webkit-transform: scale(0.2,0.2) rotateY(0); }
+    50% { 
+      -webkit-transform: scale(0.8,0.8) rotateY(360deg);
+    }
+    100% { 
+      -webkit-transform: scale(0.2,0.2) rotateY(720deg);
+    }
+  }</style>
+</head>
+<body>
+  
+  
+  
+  
+  
+<div id="logos">
+  <a id="cube" href="https://developer.mozilla.org/en/HTML/HTML5">
+      <img src="mdnface.png"  id="front" alt="MDN">
+      <img src="htmlface.png" id="back" alt="HTML5">
+  </a>
+</div>
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  <header><h1></h1></header>
+  <section id="boom">
+    <div></div>
+  </section>
+  <footer>
+  <p>Written by 
+    <a href="http://christianheilmann.com/">Chris Heilmann</a> 
+    (<a href="http://twitter.com/codepo8">@codepo8</a>)
+  </p>
+</footer>
+<script>
+var c = document.querySelector('#boom div');
+for(var i=0;i<100;i++){
+  var p = document.createElement('span');
+  var x = ~~(Math.random()*200);
+  var y = ~~(Math.random()*200);
+  var z = ~~(Math.random()*100);
+  var rx = ~~(Math.random()*360);
+  var ry = ~~(Math.random()*360);
+  var rz = ~~(Math.random()*360);
+  p.style.MozTransform = p.style.webkitTransform = 'rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ('+rz+'deg) translate3d('+x+'px,'+y+'px,'+z+'px)';
+  p.innerHTML = '&nbsp';
+  c.appendChild(p);
+}
+
+</script>
+</body>
+</html>

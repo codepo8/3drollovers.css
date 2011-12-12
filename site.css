@@ -1,0 +1,94 @@
+* { 
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  height:100%;
+  background: -moz-linear-gradient(#333,#666);
+  font-size: 15px;
+  font-family: helvetica, arial, sans-serif;
+}
+footer, section, header, aside, figure, output {
+  display: block;
+}
+h1 {
+  text-align: center;
+  margin: 10px;
+  font-family: calibri, inherit;
+  color: #fff;
+  text-transform: uppercase;
+  
+}
+section {
+  overflow: hidden;
+  padding: 1em;
+}
+section.all {
+  overflow: auto;
+  height: 280px;
+  background: #fff;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+}
+section.all ol {
+  width: 2250px;
+  padding: 0;
+  margin: 5px 10px;
+}
+section.all li{
+  float: left;
+  list-style: none;
+  padding: 0 25px 0 0;
+}
+
+h2 {
+  margin:0 0 1em 0;
+  font-size: 15px;
+}
+output {
+  float: left;
+  background: #fff;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+form {
+  font-family: monospace;
+  background: #ccc;
+  margin-left: 10px;
+  float: left;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+input[type=submit] {
+  position: absolute;
+  bottom: 10px;
+  opacity: 0;
+}
+.interactive p {
+  color: #fff;
+  font-size: 20px;
+  margin: 1em;
+}
+.interactive {
+  overflow: hidden;
+  width: 750px;
+  margin: 5px auto;
+}
+.interactive .rollover {
+  -webkit-transform: scale(0.5,0.5) translate3d(-100px, -100px, 0);
+     -moz-transform: scale(0.5,0.5) translate3d(-100px, -100px, 0);
+      -ms-transform: scale(0.5,0.5) translate3d(-100px, -100px, 0);
+       -o-transform: scale(0.5,0.5) translate3d(-100px, -100px, 0);
+          transform: scale(0.5,0.5) translate3d(-100px, -100px, 0);
+}
+footer {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+footer a {
+  color: lime;
+}
